@@ -10,13 +10,14 @@ class AppTheme {
   static final ThemeData lightTheme = ThemeData(
     primaryColor: AppColors.primaryColor,
     brightness: Brightness.light,
+    scaffoldBackgroundColor: AppColors.backgroundColorStart, // Set background color
     appBarTheme: const AppBarTheme(
       color: AppColors.appBarColor,
       iconTheme: IconThemeData(color: AppColors.appBarIconColor),
     ),
     textTheme: const TextTheme(
       displayLarge: AppTextStyles.headline1,
-      titleLarge: AppTextStyles.headline6,
+      titleLarge: AppTextStyles.headline2,
       bodyMedium: AppTextStyles.bodyText2,
     ),
     buttonTheme: const ButtonThemeData(
@@ -32,7 +33,7 @@ class AppTheme {
       onSecondary: AppColors.textColor,
       error: Colors.red,
       onError: AppColors.textColor,
-      surface: AppColors.backgroundColor,
+      surface: AppColors.backgroundColorEnd,
       onSurface: AppColors.textColor,
     ),
   );
@@ -41,13 +42,14 @@ class AppTheme {
   static final ThemeData darkTheme = ThemeData(
     primaryColor: AppColors.primaryColor,
     brightness: Brightness.dark,
+    scaffoldBackgroundColor: AppColors.backgroundColorStart, // Set background color
     appBarTheme: const AppBarTheme(
       color: AppColors.secondaryColor,
       iconTheme: IconThemeData(color: AppColors.appBarIconColor),
     ),
     textTheme: const TextTheme(
       displayLarge: AppTextStyles.headline1,
-      titleLarge: AppTextStyles.headline6,
+      titleLarge: AppTextStyles.headline2,
       bodyMedium: AppTextStyles.bodyText2,
     ),
     buttonTheme: const ButtonThemeData(

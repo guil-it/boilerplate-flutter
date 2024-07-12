@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture/presentation/pages/error_page.dart';
 import 'package:flutter_clean_architecture/presentation/pages/home_page.dart';
+import 'package:flutter_clean_architecture/presentation/pages/second_page.dart';
 import 'package:go_router/go_router.dart';
 
 /// Configures the application's routes using GoRouter.
@@ -15,18 +16,11 @@ class AppRoutes {
         path: '/',
         builder: (context, state) => const HomePage(),
       ),
-      // GoRoute(
-      //   path: '/second',
-      //   builder: (context, state) => const SecondPage(),
-      // ),
-      // GoRoute(
-      //   path: '/third',
-      //   builder: (context, state) => const ThirdPage(),
-      // ),
-      // GoRoute(
-      //   path: '/settings',
-      //   builder: (context, state) => const SettingsPage(),
-      // ),
+      GoRoute(
+        path: '/second',
+        builder: (context, state) => const SecondPage(),
+      ),
+      /// Add more routes here
     ],
     errorPageBuilder: (context, state) => const MaterialPage(
       child: ErrorPage(),

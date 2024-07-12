@@ -18,8 +18,8 @@ class InfoSection extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Icon(icon, size: 24.0, color: AppColors.primaryColor),
-        const SizedBox(width: 10.0),
+        Icon(icon, size: 30, color: AppColors.primaryColor),
+        const SizedBox(width: 6),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

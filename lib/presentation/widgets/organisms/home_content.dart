@@ -16,25 +16,7 @@ class HomeContent extends StatelessWidget {
             Image.network(
               'https://res.cloudinary.com/dfgjenml4/image/upload/v1720642021/jggk0zwejnbmsmlcd33g.png',
             ),
-            const SizedBox(height: 16.0),
-            const Wrap(
-              alignment: WrapAlignment.center,
-              children: [
-                Text(
-                  'CLI ',
-                  style: AppTextStyles.headline1,
-                ),
-                Text(
-                  'guil',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 36.0,
-                    color: AppColors.primaryColor,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 20.0),
+            const SizedBox(height: 36.0),
             Container(
               padding: const EdgeInsets.all(AppMargin.medium),
               decoration: BoxDecoration(
